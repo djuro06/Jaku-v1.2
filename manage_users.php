@@ -84,7 +84,7 @@ else if(isset($_POST["username"])){
                         <td><?php echo $userData[$i]["username"]; ?></td>
                         <td><?php echo $userData[$i]["activated"]; ?></td>
                         
-                        <td><button data-userid="<?php echo $userData[$i]['user_id']; ?>" class="btn btn-info" onclick="changeActivatedStatus(this.getAttribute('data-userid'))">Change status</button></td>
+                        <td><button data-userid="<?php echo $userData[$i]['user_id']; ?>" class="btn btn-info" onclick="changeActiveStatus(this.getAttribute('data-userid'))">Change status</button></td>
                         <td><?php echo $userData[$i]["role"]; ?></td>
                         <td><button data-userid="<?php echo $userData[$i]['user_id']; ?>" class="btn btn-info" onclick="changeAdminStatus(this.getAttribute('data-userid'))">Change admin status</button></td>
                         <td><?php echo $userData[$i]["balance"]; ?>
